@@ -12,24 +12,23 @@ public class ProductPageImpl extends BaseClass implements ProductPage{
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = mom_and_baby_tab_xpath)
-	private WebElement momAndBaby_tab;
-	@FindBy(xpath = "//p[text()='Women']")
+	
+	@FindBy(xpath =  women_xpath)
     private WebElement element1;
     
-	@FindBy(xpath ="//a[@id='women_category']")
-	private WebElement element2;
+	@FindBy(xpath = womencategory_xpath)
+    private WebElement element2;
 	
-	@FindBy(xpath = "//a[text () = 'Palazzos & Skirts']")
+	@FindBy(xpath = palazzos_xpath)
 	private WebElement element3;
 	
-	@FindBy(xpath = "//img[@id ='18016717']")
+	@FindBy(xpath = pant_xpath )
 	private WebElement element4;
 	
-	@FindBy(xpath = "//span[@id = 'size_28306531']")
+	@FindBy(xpath = size_xpath )
 	private WebElement element5;
 	
-	@FindBy(xpath ="//div[text() = 'ADD TO CART']")
+	@FindBy(xpath = Add_To_Cart)
 	private WebElement element6;
 	
 		public WebElement getElement1() {
@@ -60,4 +59,4 @@ public WebElement getElement6() {
 	}
 	
 
-}
+
