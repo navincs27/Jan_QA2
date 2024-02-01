@@ -1,5 +1,17 @@
 package com.Limeroad_Bug_Finders.pom;
 
-public class ProductPageImpl {
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
+import com.Limeroad_Bug_Finders.base.BaseClass;
+
+public class ProductPageImpl extends BaseClass implements ProductPage{
+
+	public ProductPageImpl() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(xpath = mom_and_baby_tab_xpath)
+	private WebElement momAndBaby_tab;
 }
