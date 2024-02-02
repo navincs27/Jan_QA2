@@ -14,4 +14,8 @@ public class CartPageImpl extends BaseClass implements CartPage {
 	
 	@FindBy(xpath = mom_and_baby_tab_xpath)
 	private WebElement momAndBaby_tab;
+	
+	@FindBy(xpath = mom_and_baby_tab_xpath)
+	private WebElement momBaby_tab;
+	
 }
